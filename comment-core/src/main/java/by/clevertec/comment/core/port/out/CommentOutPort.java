@@ -7,4 +7,8 @@ import java.util.UUID;
 
 public interface CommentOutPort {
     List<Comment> findAllByNews(UUID newsId);
+    Comment findComment(UUID commentID);
+
+    void deleteComment(Comment comment);
+    void deleteAllCommentByNews(UUID newsId);
 }

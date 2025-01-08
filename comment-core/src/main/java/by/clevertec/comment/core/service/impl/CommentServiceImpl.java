@@ -17,4 +17,25 @@ public class CommentServiceImpl implements CommentService {
     public List<Comment> findCommentsByNews(UUID newsId) {
         return adapter.findAllByNews(newsId);
     }
+
+    @Override
+    public Comment findComment(UUID commentID) {
+        return adapter.findComment(commentID);
+    }
+
+    @Override
+    public Comment updateContentComment(Comment update, UUID commentID) {
+        Comment commentActual = findComment(commentID);
+        return commentActual.update(update);
+    }
+
+    @Override
+    public void deleteComment(UUID commentID) {
+        adapter.deleteComment(findComment(commentID));
+    }
+
+    @Override
+    public void deleteAllCommentByNews(UUID newsID) {
+        adapter.deleteAllCommentByNews(newsID);
+    }
 }
