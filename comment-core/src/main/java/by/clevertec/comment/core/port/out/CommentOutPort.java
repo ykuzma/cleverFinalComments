@@ -9,6 +9,9 @@ public interface CommentOutPort {
     List<Comment> findAllByNews(UUID newsId);
     Comment findComment(UUID commentID);
 
+    Comment createComment(Comment comment);
+
     void deleteComment(Comment comment);
-    void deleteAllCommentByNews(UUID newsId);
+    void deleteAllCommentByNews(List<Comment> comments);
+
 }

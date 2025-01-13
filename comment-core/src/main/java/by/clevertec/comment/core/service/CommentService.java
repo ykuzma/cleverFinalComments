@@ -9,6 +9,8 @@ public interface CommentService {
 
     List<Comment> findCommentsByNews(UUID newsId);
     Comment findComment(UUID commentID);
+
+    Comment createComment(Comment comment);
     Comment updateContentComment(Comment update, UUID commentId);
     void deleteComment(UUID commentID);
 
