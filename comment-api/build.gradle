@@ -21,6 +21,7 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.6.0'
     implementation project(':comment-core')
     implementation 'by.clevertec:starter-logging-controller:0.0.1'
+    implementation 'by.clevertec:starter-controller-advice:0.0.1'
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.springframework.boot:spring-boot-starter-web'

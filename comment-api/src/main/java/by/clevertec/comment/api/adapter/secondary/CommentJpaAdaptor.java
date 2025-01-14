@@ -1,5 +1,7 @@
 package by.clevertec.comment.api.adapter.secondary;
 
+import by.clevertec.comment.api.entity.CommentEntity;
+import by.clevertec.comment.api.exception.NotFoundDataException;
 import by.clevertec.comment.api.mapper.CommentMapper;
 import by.clevertec.comment.api.repository.CommentRepository;
 import by.clevertec.comment.core.domain.Comment;
@@ -25,7 +27,9 @@ public class CommentJpaAdaptor implements CommentOutPort {
 
     @Override
     public Comment findComment(UUID commentID) {
-        return mapper.toDomain(repository.findById(commentID).orElseThrow());
+        return mapper.toDomain(repository.findById(commentID).orElseThrow(
+                () -> new NotFoundDataException(commentID, CommentEntity.class)
+        ));
     }
 
     @Override
