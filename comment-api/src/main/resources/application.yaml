@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:3000/clever
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+server:
+  servlet:
+    context-path: /clever
+  port: 8081
+logging:
+  level:
+    org.springframework.security: debug
+  controller:
+    enable: true
