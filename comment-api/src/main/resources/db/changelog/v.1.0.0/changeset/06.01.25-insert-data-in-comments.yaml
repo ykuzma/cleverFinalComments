@@ -1,0 +1,114 @@
+databaseChangeLog:
+  - changeSet:
+      id: "3"
+      author: Юрий
+      context: local
+      changes:
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0110bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: Lermontov - grate
+              - column:
+                  name: username
+                  value: alex
+              - column:
+                  name: time_create
+                  value: 2020-01-07
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0210bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: Lermontov - cool
+              - column:
+                  name: username
+                  value: alexis
+              - column:
+                  name: time_create
+                  value: 2020-01-08
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0310bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: bulgakov sila
+              - column:
+                  name: username
+                  value: dimon
+              - column:
+                  name: time_create
+                  value: 2020-02-08
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa0
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0410bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: bulgakov master
+              - column:
+                  name: username
+                  value: dimondriss
+              - column:
+                  name: time_create
+                  value: 2020-02-09
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa0
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0510bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: very bad
+              - column:
+                  name: username
+                  value: sr88
+              - column:
+                  name: time_create
+                  value: 2020-03-08
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa1
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  value: 0610bd7d-bf8a-4e7d-b326-95b4df6c1fa9
+              - column:
+                  name: text
+                  value: very good
+              - column:
+                  name: username
+                  value: sr8899
+              - column:
+                  name: time_create
+                  value: 2020-03-09
+              - column:
+                  name: news_id
+                  value: f510bd7d-bf8a-4e7d-b326-95b4df6c1fa1
